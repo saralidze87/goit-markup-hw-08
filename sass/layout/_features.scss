@@ -1,0 +1,44 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+  &__container {
+    height: 251px;
+  }
+  &__list {
+    @extend %align;
+  }
+
+  &__box {
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+
+  &__icon {
+    @extend %align;
+
+    width: 270px;
+    height: 120px;
+
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    @include font(700, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+    color: var(--second-text-color);
+    margin-bottom: 10px;
+  }
+  &__item {
+    @include font(400, 14px, 1.71, 0.03em);
+
+    color: var(--main-text-color);
+  }
+}

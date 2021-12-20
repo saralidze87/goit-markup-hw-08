@@ -1,0 +1,33 @@
+.workspace {
+  background-color: white;
+  padding-bottom: 94px;
+}
+
+.workspace-list {
+  display: flex;
+
+  &__item {
+    position: relative;
+    height: 294px;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  &__text {
+    @include font(700, 14px, 1.14, 0.03em);
+
+    text-align: center;
+
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+
+    width: 370px;
+    height: 70px;
+    padding: 27px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
