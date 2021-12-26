@@ -1,14 +1,31 @@
 .footer {
+  width: 100%;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
   &__conteiner {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__contacts {
-    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 70px;
+    }
   }
   &__logo {
     color: white;
@@ -39,7 +56,13 @@
 }
 
 .join {
-  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 93px;
+    text-align: left;
+  }
 
   &__title {
     @include font(700, 14px, 1.14, 0.03em);
@@ -69,7 +92,12 @@
   }
 }
 .email {
-  margin-left: 93px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: unset;
+    text-align: left;
+  }
+  text-align: center;
   &__title {
     @include font(700, 14px, 1.14, 0.03em);
 
@@ -79,10 +107,18 @@
     margin-bottom: 20px;
   }
   &__item {
-    @extend %align;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
   &__input {
-    width: 358px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 460px;
+    }
     height: 50px;
     color: var(--third-text-color);
     background-color: transparent;
@@ -96,10 +132,15 @@
     color: rgba(255, 255, 255, 0.6);
 
     left: 16px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: unset;
+      margin-right: 12px;
+      width: 358px;
+    }
   }
 }
 .email-button {
-  margin-left: 12px;
   &__icon {
     fill: var(--main-btn-color);
     margin-left: 10px;

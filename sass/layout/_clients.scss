@@ -4,15 +4,24 @@
   padding-top: 95px;
 
   &__list {
-    @extend %align;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
   }
 }
 
 .clients-item {
-  width: 170px;
   height: 92px;
-  &:not(:first-child) {
-    margin-left: 30px;
+
+  width: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - 30px);
   }
 
   &__link {
