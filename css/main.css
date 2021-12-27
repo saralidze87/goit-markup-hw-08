@@ -395,6 +395,10 @@ button {
   color: var(--link-text-color);
 }
 
+.mob-menu .activ {
+  color: var(--link-text-color);
+}
+
 .mob-menu__contacts {
   margin-bottom: 64px;
 }
