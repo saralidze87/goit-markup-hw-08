@@ -14,12 +14,10 @@
     background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/bg-mob-2x.jpg');
   }
+
   @media screen and (min-width: 768px) {
     background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/bg-tab-1x.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../images/bg-tab-2x.jpg');
@@ -31,14 +29,12 @@
     padding-bottom: 200px;
     background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/bg-dt-1x.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../images/bg-dt-2x.jpg');
     }
   }
+
   &__title {
     max-width: 360px;
     @include font(900, 26px, 1.62, 0.06em);
