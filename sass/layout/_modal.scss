@@ -1,6 +1,11 @@
 .modal {
-  width: 528px;
-  max-height: 581px;
+  width: 450px;
+  max-height: 609px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    max-height: 581px;
+  }
+
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
@@ -152,7 +157,10 @@
   }
   &__text {
     font-family: inherit;
-    @include font(400, 14px, 1.71, 0.03em);
+    @include font(400, 12px, 1.17, 0.03em);
+    @media screen and (min-width: 1200px) {
+      @include font(400, 14px, 1.71, 0.03em);
+    }
 
     color: #757575;
 
@@ -160,6 +168,7 @@
     align-items: center;
     margin-left: 20px;
   }
+
   &__item {
     width: 16px;
     height: 15px;
@@ -169,8 +178,12 @@
     @extend %align;
 
     position: absolute;
-    left: 12px;
-    top: 15%;
+    left: 0px;
+    bottom: 0px;
+    @media screen and (min-width: 1200px) {
+      left: 12px;
+      bottom: 25%;
+    }
   }
   &__icon {
     fill: var(--main-btn-color);
