@@ -206,6 +206,7 @@ button {
 @media screen and (min-width: 768px) {
   .header__container {
     height: 80px;
+    display: flex;
   }
 }
 
@@ -222,7 +223,6 @@ button {
   .header__list {
     display: flex;
     margin-left: 88px;
-    margin-right: 84px;
   }
 }
 
@@ -263,20 +263,29 @@ button {
 @media screen and (min-width: 768px) {
   .header__contacts {
     display: flex;
-    flex-wrap: wrap;
-    height: 50%;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-left: 84px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__contacts {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
+}
+
+.header__contacts_item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
   .header__contacts_item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -307,7 +316,7 @@ button {
 }
 
 .header__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   cursor: pointer;
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -459,6 +468,7 @@ button {
   padding-top: 118px;
   padding-bottom: 118px;
   width: 100%;
+  max-width: 1600px;
   background-color: #2f303a;
   background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-mob-1x.jpg");
   background-repeat: no-repeat;
@@ -494,7 +504,7 @@ button {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-dt-2x.jpg");
+    background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-desk-2x.jpg");
   }
 }
 
