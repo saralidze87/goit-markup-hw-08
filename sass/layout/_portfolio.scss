@@ -9,7 +9,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    height: 91px;
+    height: 100%;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
       justify-content: center;
@@ -22,7 +22,10 @@
   }
   &__item {
     &:not(:first-child) {
-      margin-left: 10px;
+      margin-left: 8px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
     }
   }
   &__btn {
@@ -52,10 +55,12 @@
   background-color: #fff;
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: -30px;
-    margin-left: -30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+    }
   }
   &__item {
     max-width: 450px;
@@ -71,16 +76,17 @@
         transform: translateY(0);
       }
     }
+
     @media screen and (min-width: 768px) {
       max-width: 354px;
-      min-height: 440px;
+      height: 100%;
       width: calc(100% / 2 - 30px);
       margin-left: 30px;
     }
     @media screen and (min-width: 1200px) {
       max-width: 370px;
 
-      width: calc(100% / 4 - 30px);
+      width: calc(100% / 3 - 30px);
     }
   }
   &__wrap {

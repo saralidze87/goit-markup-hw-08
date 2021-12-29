@@ -881,7 +881,7 @@ button {
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  height: 91px;
+  height: 100%;
   margin-bottom: 30px;
 }
 
@@ -900,7 +900,13 @@ button {
 }
 
 .portfolio__item:not(:first-child) {
-  margin-left: 10px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__btn {
@@ -927,10 +933,15 @@ button {
 }
 
 .project__list {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: -30px;
-  margin-left: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .project__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .project__item {
@@ -951,7 +962,7 @@ button {
 @media screen and (min-width: 768px) {
   .project__item {
     max-width: 354px;
-    min-height: 440px;
+    height: 100%;
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
@@ -960,7 +971,7 @@ button {
 @media screen and (min-width: 1200px) {
   .project__item {
     max-width: 370px;
-    width: calc(100% / 4 - 30px);
+    width: calc(100% / 3 - 30px);
   }
 }
 
