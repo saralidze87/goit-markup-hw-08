@@ -519,14 +519,14 @@ button {
 .team {
   width: 100%;
   background-color: #f5f4fa;
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -625,8 +625,15 @@ button {
 
 .clients {
   background-color: white;
-  padding-bottom: 95px;
-  padding-top: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .clients__list {

@@ -1,7 +1,11 @@
 .clients {
   background-color: white;
-  padding-bottom: 95px;
-  padding-top: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 
   &__list {
     display: flex;
